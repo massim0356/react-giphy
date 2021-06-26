@@ -6,16 +6,17 @@ import SearchBar from "./searchBar";
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
   render() {
+    const selectedId = "";
     return (
       <div>
         <div className="left-scene">
           <SearchBar />
           <div className="selected-gif">
-            <Gif />
+            <Gif id={selectedId} />
           </div>
         </div>
         <div className="right-scene">
-          <GifList />
+          <GifList ids={[]} />
         </div>
       </div>
     );
